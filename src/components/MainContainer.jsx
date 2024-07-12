@@ -26,34 +26,23 @@ const MainContainer = () => {
                         <a href="#">DISCOVER</a>
                     </Col>
                 </Row>
-                <Row>
+                {/* <Row>
                     <Col xs={10}>
-                        {/* <div id="rock">
+                        <div id="rock">
                             <h2>Rock Classics</h2>
                             <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-5 imgLinks py-3" id="rockSection">
                                 {Array.isArray(songs) && songs.slice(0, 5).map((song, index) => (
                                     <AlbumCard key={index} data={song} />
                                 ))}
                             </Row>
-                        </div> */}
+                        </div>
                         <SectionSongs title={'rock'} artist={'Led Zeppelin'} />
                     </Col>
-                </Row>
-                <Row >
-                    <Col xs={10}>
-                        <SectionSongs title={'pop'} artist={'Taylor Swift'} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={10}>
-                        <SectionSongs title={'metal'} artist={'Megadeth'} />
-                    </Col>
-                </Row>
-                <Row>
-                    <Col xs={10}>
-                        <SectionSongs title={'Ambience / Metal'} artist={'Sleep Token'} />
-                    </Col>
-                </Row>
+                </Row>*/}
+                <SectionSongs title={'rock'} artist={'Led Zeppelin'} />
+                <SectionSongs title={'pop'} artist={'Taylor Swift'} />
+                <SectionSongs title={'metal'} artist={'Megadeth'} />
+                <SectionSongs title={'Ambience / Metal'} artist={'Sleep Token'} />
             </Col>
         </main>
     )

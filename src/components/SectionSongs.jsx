@@ -1,5 +1,5 @@
 import AlbumCard from "./AlbumCard"
-import { Row } from "react-bootstrap"
+import { Col, Row } from "react-bootstrap"
 import { useEffect, useState } from "react"
 
 
@@ -42,15 +42,20 @@ const SectionSongs = ({ title, artist }) => {
 
 
 
+        <Row>
 
-        <div id="rock">
-            <h2>{title}</h2>
-            <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="rockSection">
-                {Array.isArray(songs) && songs.slice(0, 4).map((song, index) => (
-                    <AlbumCard key={index} data={song} />
-                ))}
-            </Row>
-        </div>
+            <Col xs={10}>
+                <div id="rock">
+                    <h2>{title}</h2>
+                    <Row className="row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="rockSection">
+                        {Array.isArray(songs) && songs.slice(0, 4).map((song, index) => (
+                            <AlbumCard key={index} data={song} />
+                        ))}
+                    </Row>
+
+                </div>
+            </Col>
+        </Row>
 
 
 
