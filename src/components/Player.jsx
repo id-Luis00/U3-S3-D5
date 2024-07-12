@@ -13,7 +13,7 @@ const Player = () => {
     const currentSong = useSelector(state => state.songs.currentSong)
     return (
 
-        <Container fluid className="fixed-bottom bg-container pt-1">
+        <Container fluid className="fixed-bottom bg-container pt-1 z-1">
             <Row className=" h-100">
                 <Col lg={10} className="offset-lg-2">
                     <Row className="h-100 flex-column justify-content-center align-items-center ">

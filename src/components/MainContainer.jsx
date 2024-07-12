@@ -46,7 +46,7 @@ const MainContainer = () => {
                 </Row>
                 <Row>
                     <Col xs={10}>
-                        <SectionSongs title={'metal'} artist={'Fleshgod Apocalypse'} />
+                        <SectionSongs title={'metal'} artist={'Megadeth'} />
                     </Col>
                 </Row>
                 <Row>
